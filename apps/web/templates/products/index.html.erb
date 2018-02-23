@@ -1,12 +1,14 @@
-<h1>Shopping List</h1>
 <h2>All Products</h2>
 
-<div id="products">
-  <div class="product">
-    <h3>Valentine's Day Candy</h3>
+<% if products.any? %>
+  <div id="products">
+    <% products.each do |product| %>
+      <div class="product">
+        <h2><%= product.product_name %></h2>
+        <p><%= product.quantity %></p>
+      </div>
+    <% end %>
   </div>
-
-  <div class="product">
-    <h3>Valentine's Day Cards</h3>
-  </div>
-</div>
+<% else %>
+  <p class="placeholder">There are no products yet.</p>
+<% end %>

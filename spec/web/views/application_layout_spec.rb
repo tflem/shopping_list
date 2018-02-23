@@ -1,4 +1,4 @@
-require "spec_helper"
+require 'spec_helper'
 
 describe Web::Views::ApplicationLayout do
   let(:layout)   { Web::Views::ApplicationLayout.new(template, {}) }
@@ -6,6 +6,6 @@ describe Web::Views::ApplicationLayout do
   let(:template) { Hanami::View::Template.new('apps/web/templates/application.html.erb') }
 
   it 'contains application name' do
-    rendered.must_include('Web')
+    rendered.must_include('Shopping List')
   end
 end

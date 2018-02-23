@@ -1,9 +1,9 @@
-require "features_helper"
+require 'features_helper'
 
-describe "Visit home" do
-  it "is successful" do
-    visit "/"
+describe 'Visit home' do
+  it 'is successful' do
+    visit '/'
 
-    page.body.must_include("Shopping List")
+    page.body.must_include('Shopping List')
   end
 end

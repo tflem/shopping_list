@@ -39,12 +39,12 @@ module Web
       routes 'config/routes'
 
       # URI scheme used by the routing system to generate absolute URLs
-      # Defaults to "http"
+      # Defaults to 'http'
       #
       # scheme 'https'
 
       # URI host used by the routing system to generate absolute URLs
-      # Defaults to "localhost"
+      # Defaults to 'localhost'
       #
       # host 'example.org'
 
@@ -211,7 +211,7 @@ module Web
       # frame, media, etc).
       #
       # Inline JavaScript is NOT allowed. To enable it, please use:
-      # "script-src 'unsafe-inline'".
+      # 'script-src 'unsafe-inline''.
       #
       # Content Security Policy introduction:
       #
