@@ -1,0 +1,3 @@
+project=shopping_list
+test=minitest
+template=erb
