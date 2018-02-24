@@ -1,0 +1,19 @@
+<h2>Add New Product</h2>
+
+<%=
+  form_for :product, '/products' do
+    div class: 'input' do
+      label      :product_name
+      text_field :product_name
+    end
+
+    div class: 'input' do
+      label      :quantity
+      text_field :quantity
+    end
+
+    div class: 'controls' do
+      submit 'Add Your Product'
+    end
+  end
+%>
